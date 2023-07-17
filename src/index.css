@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply bg-secondary text-center px-1 py-1 rounded-md capitalize font-bold ease-in duration-200 border border-secondary hover:bg-transparent
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app-main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.bg-hobbies{
+    background-image: url("./assets//home_img/chess.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#navbar a.active {
+    color: #ff7d3b;
+  }
+
+/* Services Section */
+
+.card-body1,.card-body2,.card-body3{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background: #292929cc;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    transition: 2s ease-in-out;
+    padding: 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.services-card{
+    overflow: hidden;
+}
+.services-card:hover .card-body1, .services-card:hover .card-body2{
+    right: 0;
+}
+.skills-effect{
+    position: relative;
+   background: rgba(255, 255, 255, 0.102);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    overflow: hidden;
+}
+.skills-effect::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width:  100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+.skills-effect:hover::before{
+    left: 100%;
+}
+
+/* reveal description */
+/* .back-end{
+    overflow: hidden;
+} */
+.back-end:hover .back-end-body , .front-end:hover .front-end-body, .tools:hover .tools-body{
+    right: 0;
+}
+.front-end-body{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    /* background: #1f3d4738; */
+    background: #292929cc;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: var(--clr-yellowish);
+    padding: 1rem 2rem;
+    transition: 2s ease-in-out;
+    line-height: 1.4rem;
+}
+.tools-body{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    /* background: #1f3d4738; */
+    background: #292929cc;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: var(--clr-yellowish);
+    padding: .2rem 1rem;
+    transition: 2s ease-in-out;
+    line-height: 1.4rem;
+}
+.back-end-body{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    /* background: #1f3d4738; */
+    background: #292929cc;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: var(--clr-yellowish);
+    padding: .2rem 1rem;
+    transition: 2s ease-in-out;
+    line-height: 1.4rem;
+}
+
+.icons i:hover {
+  transform: rotate(360deg);
+  transition: all 0.4s ease-in;
+}
+
+.icons i{
+  cursor: pointer;
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  background: #eee;
+}
+
+
+
