@@ -14,7 +14,7 @@ import WebDevelopment from "../assets/home_img/web-development-services.png"
 
 export const Home = () => {
   return (
-    <div>  
+    <div className="bg-primary">  
 
       {/* start of hero-section  */}
       <section id="hero-section" className="relative ">
@@ -22,7 +22,7 @@ export const Home = () => {
         <div className="h-80 w-80 bg-secondary absolute  bottom-10 right-0 blur-2xl opacity-30 z-1 rounded-full overflow-hidden" ></div>
 
         <div className="container ">
-          <div className="py-10 mt-24 mb-14 sm:py-16 md:py-28 lg:py-44 ">
+          <div className="py-10 mt-16 mb-14 sm:py-16 md:py-28 lg:py-44 ">
             <div className="flex flex-col items-center justify-around md:flex-row ">
               <div className="text-center leading-normal md:text-left md:pr-10 md:w-1/2">
                 <h1 className="text-3xl mb-5 font-bold  md:text-3xl lg:text-4xl">HI, MY NAME IS MIKE </h1>
@@ -57,7 +57,7 @@ export const Home = () => {
 
       {/* start of hobbies section  */}
       <section> 
-            <div className="bg-hobbies text-center py-16 px-4" data-aos="zoom-in">
+            <div className="bg-hobbies text-center py-16 px-4" >
                 <h2 className="text-4xl font-bold pb-12">HOBBIES</h2>
                 <p className="text-base">When not coding, I have a variety of hobbies and interests that allow me to unwind. I love playing chess for the mind games, basketball to at least exercise my body, and watching movies and series dramas.</p>
             </div>    
@@ -66,7 +66,7 @@ export const Home = () => {
         {/* start of services section  */}
         <section> 
           <div className="container ">
-            <div className="py-20">
+            <div className="pt-20 pb-40">
               <div className="text-center leading-relaxed" data-aos="zoom-in">
                 <h4 className="text-secondary text-xl">What we Offer</h4>
                 <h2 className="text-3xl pb-20">Save Your Money To Our Services</h2>

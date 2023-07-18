@@ -21,10 +21,6 @@ import GitHub from "../assets/about_img/skills-img/others-img/github.png"
 import Netlify from "../assets/about_img/skills-img/others-img/netlify.png"
 import Vercel from "../assets/about_img/skills-img/others-img/vercel.png.png"
 
-// Testimonials - image
-import testimonial1 from "../assets/about_img/testimonial-img/t1.jpg"
-import testimonial2 from "../assets/about_img/testimonial-img/t2.jpg"
-import testimonial3 from "../assets/about_img/testimonial-img/t3.jpg"
 
 
 
@@ -188,28 +184,16 @@ export const About = () => {
                 {/* start of testimonial section  */} 
                 <section>
                     <div className="pt-20">
-                        <div className="text-center text-4xl font-bold pb-10 text-secondary " data-aos="zoom-in">
+                        <div className="text-center text-4xl font-bold pb-20 text-secondary " data-aos="zoom-in">
                         TESTIMONIALS
                         </div>
                         <div>
                         <div className="container my-24 mx-auto md:px-6">
-                            <section className="mb-32 text-center">
+                            <section className="mb-32 ">
                             <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12" data-aos="zoom-in">
-                                <div className="mb-12 md:mb-0">
-                                <div className="mb-6 flex justify-center">
-                                    <img
-                                    src={testimonial1}
-                                    className="w-32 rounded-full shadow-lg dark:shadow-black/20"
-                                    alt=""
-                                    />
-                                </div>
-                                <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
-                                <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                                    Web Developer
-                                </h6>
-                                <p className="mb-4">
-                                    Seamless integration, user-friendly experience. Building a
-                                    dynamic online presence for their exceptional car rentals.
+                                <div className="mb-12 md:mb-0 text-left">
+                                <p className="mb-4 px-10">
+                                As a UX designer, I would like to share my testimonial to highlight the impact and value of user experience you design in creating successful website.
                                     <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 96 960 960"
@@ -221,84 +205,27 @@ export const About = () => {
                                     />
                                     </svg>
                                 </p>
-                                <ul className="mb-0 flex justify-center">
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m480 757 157 95-42-178 138-120-182-16-71-168v387ZM233 976l65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                </ul>
+                                <p className="px-10 text-light text-sm"> - Kristel Yama | UX Designer </p>
                                 </div>
-                                <div className="mb-12 md:mb-0">
-                                <div className="mb-6 flex justify-center">
-                                    <img
-                                    src={testimonial2}
-                                    className="w-32 rounded-full shadow-lg dark:shadow-black/20"
-                                    alt=""
+                                <div className="mb-12 md:mb-0 text-left">
+                                    <p className="mb-4 px-10">
+                                    As a front-end developer, I would like to share my testimonial to highlight the expertise, passion, and commitment to creating exceptional user interfaces and immersive web experiences like this.
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 96 960 960"
+                                    className="inline-block w-6"
+                                    >
+                                    <path
+                                        fill="currentColor"
+                                        d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z"
                                     />
+                                    </svg>  
+                                    </p>
+                                    <p className="px-10 text-light text-sm"> - John Sebastian | Frontend Developer </p>
                                 </div>
-                                <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
-                                <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                                    Graphic Designer
-                                </h6>
-                                <p className="mb-4">
-                                    Eye-catching designs, exceptional service. A perfect match
-                                    for my creative car rental projects.
+                                <div className="mb-0 text-left">
+                                <p className="mb-4 px-10">
+                                    As a mobile app developer, I would like to share my testimonial to showcase your skills and dedication to creating high-quality and user-friendly mobile web design.
                                     <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 96 960 960"
@@ -310,157 +237,8 @@ export const About = () => {
                                     />
                                     </svg>
                                 </p>
-                                <ul className="mb-0 flex justify-center">
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                </ul>
-                                </div>
-                                <div className="mb-0">
-                                <div className="mb-6 flex justify-center">
-                                    <img
-                                    src={testimonial3}
-                                    className="w-32 rounded-full shadow-lg dark:shadow-black/20"
-                                    alt=""
-                                    />
-                                </div>
-                                <h5 className="mb-2 text-lg font-bold">John Smith</h5>
-                                <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                                    Marketing Specialist
-                                </h6>
-                                <p className="mb-4">
-                                    Exceptional service, diverse fleet, convenient booking. A
-                                    trusted choice for reliable car rentals.
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 96 960 960"
-                                    className="inline-block w-6"
-                                    >
-                                    <path
-                                        fill="currentColor"
-                                        d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z"
-                                    />
-                                    </svg>
-                                </p>
-                                <ul className="mb-0 flex justify-center">
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                    <li>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 96 960 960"
-                                        className="w-5 text-warning"
-                                    >
-                                        <path
-                                        fill="currentColor"
-                                        d="m323 851 157-94 157 95-42-178 138-120-182-16-71-168-71 167-182 16 138 120-42 178Zm-90 125 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-355Z"
-                                        />
-                                    </svg>
-                                    </li>
-                                </ul>
+                                <p className="px-10 text-light text-sm"> - Justine Ostin | Mobile Developer </p>
+                                
                                 </div>
                             </div>
                             </section>
