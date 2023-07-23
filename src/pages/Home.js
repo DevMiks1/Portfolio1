@@ -30,7 +30,7 @@ export const Home = () => {
                 <p className="text-secondary font-bold">Introduction</p>
                 <h1 className="text-3xl mb-5 font-bold  md:text-3xl lg:text-4xl">HI, MY NAME IS MIKE </h1>
                 <p className="mb-10">I have a dream of pursuing a career as a web designer and a graphic designer. The field of graphics and web design captivates me, and I am fully committed to honing my skills in both areas.</p>
-                <div className="flex gap-5 justify-center pb-10">
+                <div className="flex gap-5 justify-center md:justify-start pb-10">
                   <a href="https://www.facebook.com/buboyvargas/" target="_blank" rel="noopener noreferrer">
                     <button className="border border-secondary px-5 py-2 text-secondary rounded-lg font-bold hover:bg-secondary hover:text-white transition duration-700">Contact Me
                     </button>
