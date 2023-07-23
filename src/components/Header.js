@@ -146,15 +146,6 @@ export const Header = () => {
                 Project
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/contactus"
-                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
-                onClick={closeMenu}
-              >
-                Contact
-              </NavLink>
-            </li>
           </ul>
         </div>
       </div>
