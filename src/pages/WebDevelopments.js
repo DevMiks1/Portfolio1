@@ -81,11 +81,7 @@ export const WebDevelopments = () => {
                       </div>     
                     </div>
                   </div>
-                  <div class="icons flex gap-7 py-10 item-center justify-center text-3xl" data-aos="zoom-in-up" data-aos-duration="700">
-                    <span class="text-facebook"><i class="fa-brands fa-facebook"></i></span>
-                    <span class="text-gmail"><i class="fa-solid fa-envelope"></i></span>
-                    <span class="text-insta"><i class="fa-brands fa-instagram"></i></span>
-                  </div>
+                  
                 </div>
 
               </div>

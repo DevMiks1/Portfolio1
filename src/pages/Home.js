@@ -1,6 +1,8 @@
 
 import { NavLink } from "react-router-dom"
 
+
+
 //images for hero section or profile 
 import Profile from "../assets/home_img/profile.png"
 
@@ -13,20 +15,33 @@ import CarTinsmith from "../assets/home_img/car-tinsmith.png"
 import WebDevelopment from "../assets/home_img/web-development-services.png"
 
 export const Home = () => {
+
   return (
-    <div className="bg-primary">  
+    <div>  
 
       {/* start of hero-section  */}
-      <section id="hero-section" className="relative ">
-        <div className="h-80 w-80 bg-violet absolute top-16 -left-5 blur-2xl opacity-30 z-1 rounded-full overflow-hidden" ></div>
-        <div className="h-80 w-80 bg-secondary absolute  bottom-10 right-0 blur-2xl opacity-30 z-1 rounded-full overflow-hidden" ></div>
+      <section id="hero-section" className="relative bg-white dark:bg-black dark:text-white">
+      
 
         <div className="container ">
-          <div className="py-10 mt-16 mb-14 sm:py-16 md:py-28 lg:py-44 ">
+          <div className="py-24 mt-18 mb-14 sm:py-16 md:py-28 lg:py-56 ">
             <div className="flex flex-col items-center justify-around md:flex-row ">
               <div className="text-center leading-normal md:text-left md:pr-10 md:w-1/2">
+                <p className="text-secondary font-bold">Introduction</p>
                 <h1 className="text-3xl mb-5 font-bold  md:text-3xl lg:text-4xl">HI, MY NAME IS MIKE </h1>
-                <p className="uppercase mb-10">I have a dream of pursuing a career as a web designer and a graphic designer. The field of graphics and web design captivates me, and I am fully committed to honing my skills in both areas.</p>
+                <p className="mb-10">I have a dream of pursuing a career as a web designer and a graphic designer. The field of graphics and web design captivates me, and I am fully committed to honing my skills in both areas.</p>
+                <div className="flex gap-5 justify-center pb-10">
+                  <a href="https://www.facebook.com/buboyvargas/" target="_blank" rel="noopener noreferrer">
+                    <button className="border border-secondary px-5 py-2 text-secondary rounded-lg font-bold hover:bg-secondary hover:text-white transition duration-700">Contact Me
+                    </button>
+                  </a>
+                  <a href="https://drive.google.com/uc?export=download&id=1LSoTWa0nev_p0fyXERtrGvKvLZb0MORW" download>
+                    <button className="border border-secondary bg-secondary text-white px-6 py-2 rounded-lg font-bold hover:bg-transparent hover:text-secondary transition duration-300">Resume
+                    </button>
+                  </a>
+
+                </div>
+                
               </div>
 
               <div className="z-10">        
@@ -38,7 +53,7 @@ export const Home = () => {
       </section> {/* end of hero-section  */}
        
       {/* start of journey or blog section  */}
-      <section className="bg-primarylight">
+      <section>
         <div className="container ">
           <div className="py-20 md:flex md:flex-row items-center md:gap-10 md:w-full">
             <div data-aos="zoom-in">
@@ -46,7 +61,7 @@ export const Home = () => {
             </div>
 
             <div className="text-center md:w-1/2 md:text-center " data-aos="zoom-in">
-              <h2 className="text-3xl font-bold mb-6 ">Journey</h2>
+              <h2 className="text-3xl font-bold mb-6 text-secondary dark:text-white">Journey</h2>
               <p className="mb-4">Before the pandemic, I studied BSCpe, but I admit that I no longer enjoy coding as it tends to overwhelm me. However, in December 2022, I discovered web development, and I can confidently say that I thoroughly enjoy creating dynamic websites with excellent design.
               </p> 
             </div>
@@ -57,14 +72,14 @@ export const Home = () => {
 
       {/* start of hobbies section  */}
       <section> 
-            <div className="bg-hobbies text-center py-16 px-4" >
+            <div className="bg-hobbies text-center py-16 px-4 text-white" >
                 <h2 className="text-4xl font-bold pb-12">HOBBIES</h2>
                 <p className="text-base">When not coding, I have a variety of hobbies and interests that allow me to unwind. I love playing chess for the mind games, basketball to at least exercise my body, and watching movies and series dramas.</p>
             </div>    
         </section> {/* end of hobbies section */}
 
         {/* start of services section  */}
-        <section> 
+        <section className=""> 
           <div className="container ">
             <div className="pt-20 pb-40">
               <div className="text-center leading-relaxed" data-aos="zoom-in">
@@ -75,41 +90,66 @@ export const Home = () => {
               <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3" data-aos="zoom-in">
 
                 { /* start of 1st service card  */}
-                <div className="services-card border-2 border-solid rounded-2xl relative "> 
-                  <img src={CarPainting} alt="CarPainting" className="h-full w-full"/>
-                  <div className="card-body1">
-                    <h2 className="text-2xl  font-bold mb-2">CAR PAINTING</h2>
-                    <p className="mb-2  text-base px-2 sm:text-xl md:text-sm lg:text-xs xl:text-sm">We specialize in delivering top-quality car painting services that will transform the look of your vehicle. Whether you want to restore the original shine or give your car a fresh, vibrant color, with our skilled and experienced technicians, we have the services to make it happen.
-                    </p>
-                    <NavLink to="carpaintings"><button className="btn" onClick={() => {
-                window.scrollTo(0, 0);}}>Discover</button></NavLink>
+                <div className="border-2 border-white  h-[440px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden " data-aos="fade-up" data-aos-duration="700" style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
+                  <div>
+                    <div className="relative">
+                      <img src={CarPainting} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                    </div>
+                    <div className="flex flex-col px-3 ">
+                      <p className="pt-3 pb-3 text-2xl font-bold">Car Painting</p>
+                                    
+                      <div>
+                        <p className="text-sm pb-3">We specialize in delivering top-quality car painting services that will transform the look of your vehicle. Whether you want to restore the original shine or give your car a fresh, vibrant color, with our skilled and experienced technicians, we have the services to make it happen.</p>
+                        
+                      </div>
+                      <NavLink to="carpaintings"><button className="btn w-[100px]" onClick={() => window.scrollTo(0, 0)}>Discover</button></NavLink>
+                    </div>
                   </div>
                 </div> {/* end of 1st service card  */}
                       
                 {/* start of 2nd service card  */}
-                <div className="services-card border-2 border-solid rounded-2xl relative "> 
-                  <img src={CarTinsmith} alt="car-tinsmith" className="h-full w-full"/>
-                  <div className="card-body2 m-auto text-center">
-                    <div className="text-3xl font-bold mb-2">CAR TINSMITH</div>
-                      <p className="pb-2 text-sm px-2 sm:text-xl md:text-xs  lg:text-xs xl:text-sm">From scratches to more extensive repairs, we specialize in working with various types of sheet metal, including steel, aluminum, and more. Using state-of-the-art tools and techniques, we meticulously shape, weld, and repair the damaged areas, seamlessly blending them with the original structure of your car.</p>
-                      <NavLink to="cartinsmiths"><button className="btn" onClick={() => {
-                window.scrollTo(0, 0);}}>Discover</button></NavLink>
+                <div className="border border-white  h-[440px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden shadow-box"  data-aos="fade-up" data-aos-duration="700" style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
+                  <div>
+                    <div className="relative">
+                      <img src={CarTinsmith} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+
                     </div>
-                </div> {/* end of 2nd service card  */}
+
+                    <div className="flex flex-col px-3 ">
+                      <p className="pt-3 pb-3 text-2xl font-bold">Car Tinsmith</p>
+                                    
+                      <div className="pb-5">
+                        <p className="text-sm pb-3">From scratches to more extensive repairs, we specialize in working with various types of sheet metal, including steel, aluminum, and more. We meticulously shape, weld, and repair the damaged areas, seamlessly blending them with the original structure of your car.</p>
+                      
+                      </div>
+                      <NavLink to="cartinsmiths"><button className="btn w-[100px]" onClick={() => window.scrollTo(0, 0)}>Discover</button></NavLink>
+                    </div>
+                  </div>
+                </div>{/* end of 2nd service card  */}
                       
                 {/* start of 3rd service card  */}
-                <div className="services-card border-2 border-solid rounded-2xl relative "> 
-                  <img src={WebDevelopment}alt="car-tinsmith" className="h-full w-full"/>
-                  <div className="card-body2 m-auto text-center">
-                    <div className="text-3xl font-bold mb-2">WEB DEVELOPMENT</div>
-                      <p className="pb-2 text-sm px-2 sm:text-xl md:text-xs md:px-1 lg:text-xs xl:text-sm">We understand that every project is unique, and we tailor our services to meet your specific needs. Whether you're starting from scratch or looking to revamp your existing website, our experienced developers will collaborate with you to understand your goals and translate them into a compelling online presence.</p>
-                      <NavLink to="webdevelopments"><button className="btn" onClick={() => {
-                window.scrollTo(0, 0);}}>Discover</button></NavLink>
+                <div className="border border-white  h-[440px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700" style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
+                  <div>
+                    <div className="relative">
+                      <img src={WebDevelopment} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    
+                      <div className= " flex flex-col px-3 ">
+                        <p className="pt-3 pb-3 text-2xl font-bold">Web Development</p>
+                                    
+                        <div className="pb-5">
+                        <p className="text-sm pb-3">
+                          We understand that every project is unique, and we tailor our services to meet your specific needs. Whether you're starting from scratch or looking to revamp your existing website, our experienced developers will collaborate with you to understand your goals.
+                        </p>
+                       
+                      </div>
+                      <NavLink to="webdevelopments"><button className="btn w-[100px]" onClick={() => window.scrollTo(0, 0)}>Discover</button></NavLink>
+                      </div>
                     </div>
                   </div> {/* end of 3rd service card  */}   
                 </div>
               </div>  
             </div>
+          </div>
         </section> {/* end of services section  */}
         
      

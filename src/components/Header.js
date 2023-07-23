@@ -1,12 +1,50 @@
 import { NavLink, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Sun from "../assets/sun.png"
+import Moon from "../assets/moon.png"
 
 export const Header = () => {
+
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    // Get the saved theme preference from local storage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else {
+      // If no preference is saved, set the default theme to "light"
+      setTheme("light");
+    }
+  }, []);
+
+  useEffect(() => {
+    // Update the class on the root HTML element whenever the theme changes
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    // Save the current theme preference to local storage
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+   
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  // const [darkMode, setDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // const toggleDarkMode = () => {
+  //   setDarkMode((prevDarkMode) => !prevDarkMode);
+  // };
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -16,20 +54,31 @@ export const Header = () => {
   return (
     <nav
       id="navbar"
-      className="fixed w-full z-50 bg-primary text-white tracking-wider"
-    >
+      className="fixed w-full z-50 bg-white  text-black tracking-wider border-b-[1px] border-linelight dark:bg-option dark:border-linedark"   >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link
+        <div className="flex gap-5">
+          <button onClick={handleThemeSwitch}>
+            <img
+              src={theme === "light"? Moon : Sun}
+              alt={theme === "light" ? "Moon" : "Sun"}
+              className="w-[20px] h-[20px]"
+            />
+          </button>
+          
+          <Link
           to="/"
           className="flex items-center"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
         >
-          <h2 className="text-color-white text-2xl">
+          <h2 className="text-2xl font-semibold dark:text-white">
             Mikee.<span className="text-secondary">Dev</span>
           </h2>
         </Link>
+        </div>
+        
+        
         <button
           data-collapse-toggle="navbar-dropdown"
           type="button"
@@ -56,14 +105,14 @@ export const Header = () => {
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } w-full md:block md:w-auto text-white`}
+          } w-full md:block md:w-auto `}
           id="navbar-dropdown"
         >
-          <ul className="flex flex-col text-white font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
+          <ul className="flex flex-col dark:text-white font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
             <li>
               <NavLink
                 to="/"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary md:p-0"
+                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
                 Home
@@ -73,7 +122,7 @@ export const Header = () => {
             <li>
               <NavLink
                 to="/about"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary md:p-0"
+                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
                 About
@@ -82,7 +131,7 @@ export const Header = () => {
             <li>
               <NavLink
                 to="/carpaintings"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary md:p-0"
+                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
                 Services
@@ -91,7 +140,7 @@ export const Header = () => {
             <li>
               <NavLink
                 to="/project"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary md:p-0"
+                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
                 Project
@@ -100,7 +149,7 @@ export const Header = () => {
             <li>
               <NavLink
                 to="/contactus"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary md:p-0"
+                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
                 Contact

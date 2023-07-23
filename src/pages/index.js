@@ -1,7 +1,6 @@
 export {About} from "./About"
 export {Business} from "./Business"
 export {Home} from "./Home"
-export {Luxury} from "./Luxury"
 export {CarPaintings} from "./CarPaintings"
 export {CarTinsmiths} from "./CarTinsmiths"
 export {WebDevelopments} from "./WebDevelopments"

@@ -4,6 +4,7 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -14,10 +15,21 @@ module.exports = {
         white: "#fff",
         light: "#909296",
         violet : "#A427DF",
-        black: "#292929cc",
         facebook : "#1877F2",
         gmail : "#DB4437",
-        insta : "#FD1D1D"
+        insta : "#FD1D1D",
+        blues : "#0099aa",
+        reds: "#FF6347",
+        yellows: "#F7DF1E",
+        greens: "#3FA037",
+        php:"#0074A3",
+        semidark: "#373A40",
+        option: "#1A1B1E",
+        linedark: '#2C2E33',
+        linelight: "#E9ECEF",
+        navbar: "#495057",
+        bgcard: "#EDF1F7",
+        
         
       },
     },

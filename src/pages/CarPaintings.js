@@ -80,11 +80,7 @@ export const CarPaintings = () => {
                       </div>     
                     </div>
                   </div>
-                  <div className="icons flex gap-7 py-10 item-center justify-center text-3xl" data-aos="zoom-in-up" data-aos-duration="700">
-                    <a href="https://www.facebook.com/buboyvargas/" target="_blank" rel="noopener noreferrer"><span className="text-facebook"><i className="fa-brands fa-facebook"></i></span></a>
-                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer"><span className="text-gmail"><i className="fa-solid fa-envelope"></i></span></a>
-                    <a href="https://www.instagram.com/devmiks/" target="_blank" rel="noopener noreferrer"><span className="text-insta"><i className="fa-brands fa-instagram"></i></span></a>
-                  </div>
+                  
                 </div>
 
               </div>

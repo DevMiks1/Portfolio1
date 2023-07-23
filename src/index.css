@@ -25,6 +25,11 @@
     margin: auto;
     padding: 0 20px;
 }
+.container1{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
 
 .bg-hobbies{
     background-image: url("./assets//home_img/chess.png");
@@ -151,5 +156,17 @@
   background: #eee;
 }
 
+/* hover for image */
 
+.card-container {
+    transition: .5s;
+    animation: ease-in;
+
+}
+.imgs:hover {
+    transform: scale(1.1);
+}
+.__shadow-box{
+    box-shadow: 0 0 15px -5px
+}
 

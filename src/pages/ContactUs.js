@@ -56,9 +56,9 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className="py-20 flex justify-center ">
-      <div className="border-gray-400 border-2 p-2 rounded-lg max-w-xl mx-10 px-5">
-        <h1 className="text-center text-3xl font-bold text-primary">
+    <div className="py-28 flex justify-center ">
+      <div className="border-secondary border-2 p-2 rounded-lg max-w-xl mx-10 px-5">
+        <h1 className="text-center text-3xl font-bold text-secondary">
           Contact Us
         </h1>
         <br />

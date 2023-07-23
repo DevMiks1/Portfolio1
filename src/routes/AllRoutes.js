@@ -1,7 +1,6 @@
 import {Routes, Route} from "react-router-dom"
 
-
-import {Home, About, Luxury, Business, CarPaintings, CarTinsmiths,  WebDevelopments, Project, ContactUs, PageNotFound} from "../pages"
+import {Home, About, Business, CarPaintings, CarTinsmiths,  WebDevelopments, Project, ContactUs, PageNotFound} from "../pages"
 
 
 
@@ -10,12 +9,14 @@ import {Home, About, Luxury, Business, CarPaintings, CarTinsmiths,  WebDevelopme
 
 
 export const AllRoutes = () => {
+  
+
+
   return (
-    <div>
+    <div className="bg-white text-black dark:bg-option dark:text-white">
         <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="about" element={<About />}></Route>
-            <Route path="luxury" element={<Luxury />}></Route>
             <Route path="business" element={<Business />}></Route>
             <Route path="carpaintings" element={<CarPaintings />}></Route>  
             <Route path="cartinsmiths" element={<CarTinsmiths />}></Route> 
