@@ -1,3 +1,5 @@
+import {motion} from "framer-motion"
+
 // image
 import Hotel from "../assets/Project_img/Hotel.png"
 import Kodeledger from "../assets/Project_img/Kodeledger.png"
@@ -10,16 +12,9 @@ import NutriChef from "../assets/Project_img/NutfiChef.png"
 import Cargo2 from "../assets/Project_img/Cargo2.png"
 
 // skills
-import Html from "../assets/about_img/skills-img/frontend-img/html.png"
-import Css from "../assets/about_img/skills-img/frontend-img/css.png"
-import Js from "../assets/about_img/skills-img/frontend-img/js.png"
-import Tailwind from "../assets/about_img/skills-img/frontend-img/tailwind.png"
-import Bootstrap from "../assets/about_img/skills-img/frontend-img/bootstrap1.png"
-import Php from "../assets/about_img/skills-img/backend-img/php.png"
 import GitHub from "../assets/about_img/skills-img/others-img/github.png"
 import Netlify from "../assets/about_img/skills-img/others-img/netlify.png"
 import React from "../assets/about_img/skills-img/frontend-img/react.png"
-import NodeJs from "../assets/about_img/skills-img/backend-img/nodejs1.png"
 import Vercel from "../assets/about_img/skills-img/others-img/vercel.png.png"
 
 
@@ -40,10 +35,13 @@ export const Project = () => {
                 <div className="container">
                     <h2 className="  text-secondary text-5xl font-bold  text-center pb-10">My Projects</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 "  >
-                        <div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
+                        <motion.div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}
+                        whileHover={{scale: 1.1}}
+                        transition={{type: "spring", stiffness: 200}}
+                        >
                             <div className="relative"> 
                                 <div className="relative">
-                                    <img src={Hotel} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={Hotel} alt="" className="h-[180px] w-full rounded-lg " />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                             <a href="https://exquisite-centaur-56859b.netlify.app/" target="_blank" rel="noopener noreferrer"><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                             <a href="https://github.com/DevMiks1/Hotel" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
@@ -66,7 +64,7 @@ export const Project = () => {
                                         </div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                         <div className="border border-white   h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div>
                                 <div className="relative">

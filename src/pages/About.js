@@ -1,5 +1,7 @@
 
 import { useState } from "react"
+import {motion} from "framer-motion"
+
 // images
 import KnowMe from "../assets/about_img/know me.jpg"
 
@@ -38,11 +40,23 @@ export const About = () => {
         <div className="pt-40 pb-20">
             <div className="">
                 {/* Start of know-me section */}
-                <section className="pt-14">
+                <section className="pt-14 overflow-hidden">
                     <div className="grid lg:grid-cols-2 ">
-                        
-                        <img src={KnowMe} alt="" className="h-[400px] w-[400px] mx-auto z-10 mb-10"/>
-                        <div className="px-5 lg:pt-6 xl:pt-10">
+                        <motion.div 
+                        initial={{x: "-100vw"}}
+                        animate={{x: 0}}
+                        transition={{delay: 0.1, type: "spring", stiffness: 50}}
+                        >
+                            <img src={KnowMe} alt="" className="h-[400px] w-[400px] mx-auto z-10 mb-10"
+                            
+                            />
+
+                        </motion.div>
+                        <motion.div className="px-5 lg:pt-6 xl:pt-10"
+                        initial={{x: "100vw"}}
+                        animate={{x: 0}}
+                        transition={{delay: 0.5, type: "spring", stiffness: 50}}
+                        >
                             <p className="pb-5">
                             Hi, I'm Mike Alfred Vargas. I'm inspired to become a full-stack web developer who can learn and adapt to new things. I want to create and develop solutions that can solve problems and help a lot of people since we know that there are a lot of possible solutions to implement that can give us easy access to our lives
                             </p>
@@ -52,7 +66,7 @@ export const About = () => {
                             <p>
                             Before, I always challenged myself to corporate all the learnings I had when I was a beginner, such as Html, CSS, Bootstrap, Javascript,Tailwind, PHP, Laravel, and MySQL.
                             </p>
-                        </div>
+                        </motion.div>
                     </div> 
                 </section> {/* End of know-me section */}
 
@@ -87,11 +101,14 @@ export const About = () => {
 
                                     const {id,img} = skill;
                                     return (
-                                        <div key={id} className="flex justify-center cursor-pointer transition-transform duration-700 transform-gpu hover:scale-150">
+                                        <motion.div key={id} className="flex justify-center cursor-pointer"
+                                        whileHover={{scale: 1.3}}
+                                        transition={{type: "spring", stiffness: 300}}
+                                        >
                                             <img src={img} alt=""  className="h-[40px] w-[40px]"/>
                                           
                                             
-                                        </div>
+                                        </motion.div>
                                         
                                     )
                                     

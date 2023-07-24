@@ -1,6 +1,6 @@
 
 import { NavLink } from "react-router-dom"
-
+import {motion} from "framer-motion"
 
 
 //images for hero section or profile 
@@ -16,6 +16,25 @@ import WebDevelopment from "../assets/home_img/web-development-services.png"
 
 export const Home = () => {
 
+  const heroVariants = {
+    initial: {
+      opacity: 0
+    },
+    animate: {
+      opacity: 1
+    },
+  }
+  const buttonVariants = {
+    hover: {
+      scale: 1.1,
+      transition: {
+      repeat: Infinity,
+      repeatType: "reverse",
+      duration: 0.3,
+      },
+    },
+  };
+  
   return (
     <div>  
 
@@ -24,43 +43,72 @@ export const Home = () => {
       
 
         <div className="container ">
-          <div className="py-24 mt-18 mb-14 sm:py-16 md:py-28 lg:py-56 ">
+          <div className="py-24 md:py-44 lg:py-52 ">
             <div className="flex flex-col items-center justify-around md:flex-row ">
-              <div className="text-center leading-normal md:text-left md:pr-10 md:w-1/2">
+              <motion.div className="text-center leading-normal md:text-left md:pr-10 md:w-1/2"
+              variants={heroVariants}
+              initial="initial"
+              animate="animate"
+
+              >
                 <p className="text-secondary font-bold">Introduction</p>
                 <h1 className="text-3xl mb-5 font-bold  md:text-3xl lg:text-4xl">HI, MY NAME IS MIKE </h1>
                 <p className="mb-10">I have a dream of pursuing a career as a web designer and a graphic designer. The field of graphics and web design captivates me, and I am fully committed to honing my skills in both areas.</p>
-                <div className="flex gap-5 justify-center md:justify-start pb-10">
-                  <a href="https://www.facebook.com/buboyvargas/" target="_blank" rel="noopener noreferrer">
-                    <button className="border border-secondary px-5 py-2 text-secondary rounded-lg font-bold hover:bg-secondary hover:text-white transition duration-700">Contact Me
-                    </button>
-                  </a>
-                  <a href="https://drive.google.com/uc?export=download&id=1LSoTWa0nev_p0fyXERtrGvKvLZb0MORW" download>
-                    <button className="border border-secondary bg-secondary text-white px-6 py-2 rounded-lg font-bold hover:bg-transparent hover:text-secondary transition duration-300">Resume
-                    </button>
-                  </a>
+                <div className="flex gap-7 justify-center md:justify-start pb-10">
+                  <motion.div
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  >
+                    <a href="https://www.facebook.com/buboyvargas/" target="_blank" rel="noopener noreferrer">
+                      <motion.button className="border border-secondary px-4 py-2 text-secondary rounded-lg font-bold hover:bg-secondary hover:text-white "
+                      
+                      >Contact Me
+                      </motion.button>
+                    </a>
+                  </motion.div>
+                  
+                  <div>
+                    <a href="https://drive.google.com/uc?export=download&id=1LSoTWa0nev_p0fyXERtrGvKvLZb0MORW" download>
+                      <motion.button className="border border-secondary bg-secondary text-white px-6 py-2 rounded-lg font-bold hover:bg-transparent hover:text-secondary"
+                      variants={buttonVariants}
+                      whileHover="hover"
+                      
+                      >Resume
+                      </motion.button>
+                    </a>
+
+                  </div>
 
                 </div>
                 
-              </div>
+              </motion.div>
 
-              <div className="z-10">        
-                <img src={Profile} alt="" className="rounded-full h-56 w-56"/>
-              </div>
+              <motion.div className="z-10"
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
+              transition={{delay: 0.5}}
+              drag
+    
+              >        
+                <img src={Profile} alt="" className="rounded-full h-56 w-56 cursor-pointer"/>
+              </motion.div>
             </div>
           </div>  
         </div>
       </section> {/* end of hero-section  */}
        
       {/* start of journey or blog section  */}
-      <section>
-        <div className="container ">
-          <div className="py-20 md:flex md:flex-row items-center md:gap-10 md:w-full">
-            <div data-aos="zoom-in">
-              <img src={Journey} alt="journey" className="mb-10 md:w-96 md:h-64 lg:w-full"/>
+      <section
+      
+      >
+        
+        <div className="container">
+          <div className="py-20 md:flex md:flex-row justify-center items-center md:gap-10 md:w-full">
+            <div data-aos="zoom-in " >
+              <img src={Journey} alt="journey" className="m-auto md:w-96 md:h-64   lg:w-max"/>
             </div>
 
-            <div className="text-center md:w-1/2 md:text-center " data-aos="zoom-in">
+            <div className="text-center md:w-1/2 md:text-center pt-5" data-aos="zoom-in">
               <h2 className="text-3xl font-bold mb-6 text-secondary dark:text-white">Journey</h2>
               <p className="mb-4">Before the pandemic, I studied BSCpe, but I admit that I no longer enjoy coding as it tends to overwhelm me. However, in December 2022, I discovered web development, and I can confidently say that I thoroughly enjoy creating dynamic websites with excellent design.
               </p> 

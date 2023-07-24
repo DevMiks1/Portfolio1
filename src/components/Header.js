@@ -1,5 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import {motion} from "framer-motion" 
+
 import Sun from "../assets/sun.png"
 import Moon from "../assets/moon.png"
 
@@ -57,13 +59,16 @@ export const Header = () => {
       className="fixed w-full z-50 bg-white  text-black tracking-wider border-b-[1px] border-linelight dark:bg-option dark:border-linedark"   >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex gap-5">
-          <button onClick={handleThemeSwitch}>
+          <motion.button onClick={handleThemeSwitch}
+          whileHover={{scale: 1.3}}
+          transition={{type: "spring", stiffness: 300}}
+          >
             <img
               src={theme === "light"? Moon : Sun}
               alt={theme === "light" ? "Moon" : "Sun"}
               className="w-[20px] h-[20px]"
             />
-          </button>
+          </motion.button>
           
           <Link
           to="/"
@@ -72,9 +77,11 @@ export const Header = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <h2 className="text-2xl font-semibold dark:text-white">
+          <motion.h2 className="text-2xl font-semibold dark:text-white"
+          whileHover={{scale: 1.2}}
+          transition={{type: "spring", stiffness: 300}}>
             Mikee.<span className="text-secondary">Dev</span>
-          </h2>
+          </motion.h2>
         </Link>
         </div>
         
@@ -108,14 +115,20 @@ export const Header = () => {
           } w-full md:block md:w-auto `}
           id="navbar-dropdown"
         >
-          <ul className="flex flex-col dark:text-white font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
+          <ul className="flex flex-col dark:text-white font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0"
+          >
             <li>
               <NavLink
                 to="/"
                 className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
+               
               >
-                Home
+                <motion.h2
+               
+                 whileHover={{scale: 1.3, originX: 0}}
+                 transition={{type: "spring", stiffness: 300}}
+                >Home</motion.h2>
               </NavLink>
             </li>
 
@@ -125,7 +138,11 @@ export const Header = () => {
                 className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
-                About
+                <motion.h2
+                 whileHover={{scale: 1.3, originX: 0}}
+                 transition={{type: "spring", stiffness: 300}}
+                >About
+                </motion.h2>
               </NavLink>
             </li>
             <li>
@@ -134,7 +151,11 @@ export const Header = () => {
                 className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
-                Services
+                <motion.h2 
+                whileHover={{scale: 1.3, originX: 0}}
+                transition={{type: "spring", stiffness: 300}}
+                >Services
+                </motion.h2>
               </NavLink>
             </li>
             <li>
@@ -143,7 +164,11 @@ export const Header = () => {
                 className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
-                Project
+                <motion.h2
+                whileHover={{scale: 1.3, originX: 0}}
+                transition={{type: "spring", stiffness: 300}}
+                >Project
+                </motion.h2>
               </NavLink>
             </li>
           </ul>
