@@ -16,14 +16,8 @@ import WebDevelopment from "../assets/home_img/web-development-services.png"
 
 export const Home = () => {
 
-  const heroVariants = {
-    initial: {
-      opacity: 0
-    },
-    animate: {
-      opacity: 1
-    },
-  }
+
+
   const buttonVariants = {
     hover: {
       scale: 1.1,
@@ -36,36 +30,38 @@ export const Home = () => {
   };
   
   return (
+    
     <div>  
-
       {/* start of hero-section  */}
-      <section id="hero-section" className="relative bg-white dark:bg-black dark:text-white">
+      <motion.section id="hero-section" className="bg-white dark:bg-black dark:text-white"
       
-
+      >      
         <div className="container ">
           <div className="py-24 md:py-44 lg:py-52 ">
             <div className="flex flex-col items-center justify-around md:flex-row ">
               <motion.div className="text-center leading-normal md:text-left md:pr-10 md:w-1/2"
-              variants={heroVariants}
-              initial="initial"
-              animate="animate"
+
+              initial= {{opacity: 0, y: "-100%"}}
+              animate= {{opacity: 1, y: 0}}
+              exit= {{opacity: 0, y: "-100%"}}
+              transition={{ease: "easeInOut", duration: 1,}}
 
               >
                 <p className="text-secondary font-bold">Introduction</p>
                 <h1 className="text-3xl mb-5 font-bold  md:text-3xl lg:text-4xl">HI, MY NAME IS MIKE </h1>
                 <p className="mb-10">I have a dream of pursuing a career as a web designer and a graphic designer. The field of graphics and web design captivates me, and I am fully committed to honing my skills in both areas.</p>
                 <div className="flex gap-7 justify-center md:justify-start pb-10">
-                  <motion.div
-                  variants={buttonVariants}
-                  whileHover="hover"
+                  <div
+                  
                   >
                     <a href="https://www.facebook.com/buboyvargas/" target="_blank" rel="noopener noreferrer">
                       <motion.button className="border border-secondary px-4 py-2 text-secondary rounded-lg font-bold hover:bg-secondary hover:text-white "
-                      
+                      variants={buttonVariants}
+                      whileHover="hover"
                       >Contact Me
                       </motion.button>
                     </a>
-                  </motion.div>
+                  </div>
                   
                   <div>
                     <a href="https://drive.google.com/uc?export=download&id=1LSoTWa0nev_p0fyXERtrGvKvLZb0MORW" download>
@@ -84,18 +80,21 @@ export const Home = () => {
               </motion.div>
 
               <motion.div className="z-10"
-              initial={{opacity: 0}}
-              whileInView={{opacity: 1}}
-              transition={{delay: 0.5}}
-              drag
-    
+              initial= {{scale: 0}}
+              animate= {{scale: 1}}
+              exit= {{scale: 0}}
+              transition={{ease: "easeInOut", duration: 1}}
+              
               >        
-                <img src={Profile} alt="" className="rounded-full h-56 w-56 cursor-pointer"/>
+                <motion.img src={Profile} alt="" className="rounded-full h-56 w-56 cursor-pointer"
+                variants={buttonVariants}
+                whileHover="hover"
+                />
               </motion.div>
             </div>
           </div>  
         </div>
-      </section> {/* end of hero-section  */}
+      </motion.section> {/* end of hero-section  */}
        
       {/* start of journey or blog section  */}
       <section
@@ -206,6 +205,7 @@ export const Home = () => {
       
       
     </div>  
+    
   )
 }
 

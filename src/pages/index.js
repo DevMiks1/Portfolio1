@@ -1,5 +1,4 @@
 export {About} from "./About"
-export {Business} from "./Business"
 export {Home} from "./Home"
 export {CarPaintings} from "./CarPaintings"
 export {CarTinsmiths} from "./CarTinsmiths"
