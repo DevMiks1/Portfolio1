@@ -1,41 +1,14 @@
 
 import { Link } from "react-router-dom"
-import {motion} from "framer-motion"
 
 // images for services
 import CarPainting from "../assets/home_img/car-painting.jpg"
 import CarTinsmith from "../assets/home_img/car-tinsmith.png"
 import WebDevelopment from "../assets/home_img/web-development-services.png"
 
-const carPaintingVariants = {
-  initial: {
-      opacity: 0
-  },
-  animate: {
-      opacity: 1,
-      transition: {
-        ease: "easeInOut",
-        duration: 1
-      }
-      
-  },
-  exit: {
-      opacity: 0,
-      transition: {
-        ease: "easeInOut",
-        duration: 1
-      }
-  }
-}
-
 export const CarPaintings = () => {
   return (
-    <motion.div
-    variants={carPaintingVariants}
-    initial= "initial"
-    animate= "animate"
-    exit= "exit"
-    >
+    <div>
       <div className="py-40">
         <div className="container">
           <section>
@@ -117,7 +90,7 @@ export const CarPaintings = () => {
 
       </div>
 
-    </motion.div>
+    </div>
   )
 }
 

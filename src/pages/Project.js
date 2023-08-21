@@ -154,20 +154,16 @@ export const Project = () => {
 
                                     </div>
                                 </div>
-                                <div className="px-3">
-                                    <p className="pt-3 pb-3 text-2xl font-bold">Key Codes</p>
-                                    
-                                        <div className="pb-5">
-                                            <p className="text-sm">A website that integrates event whenever you press a key it will gives a corresponding value even the shift, alt, cltr and numpad. </p>
-                                        </div>
-                                        
-                                    
+                                <div className="flex flex-col justify-between px-3 h-[180px]">
+                                    <p className="py-3 text-2xl font-bold">Key Codes</p>
+                                    <div className="pb-5">
+                                        <p className="text-sm">A website that integrates event whenever you press a key it will gives a corresponding value even the shift, alt, cltr and numpad. </p>
+                                    </div>
                                     <div className="flex gap-2 text-sm">
-                                            <p className="text-reds">#html</p>
-                                            <p className="text-blues">#css</p>
-                                            <p className="text-yellows">#javascript</p>
-
-                                        </div>
+                                        <p className="text-reds">#html</p>
+                                        <p className="text-blues">#css</p>
+                                        <p className="text-yellows">#javascript</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -181,20 +177,19 @@ export const Project = () => {
 
                                     </div>
                                 </div>
-                                <div className="px-3">
+                                <div className="flex flex-col justify-between px-3 h-[180px]">
                                     <p className="pt-3 pb-3 text-2xl font-bold">Feedback</p>
                                     
-                                        <div className="pb-5">
-                                            <p className="text-sm">A website app that allow users to put his/her feedback and they will see others feedback too including the name and the time. </p>
-                                        </div>
-                                        
-                                    
+                                    <div className="pb-5">
+                                        <p className="text-sm">A website app that allow users to put his/her feedback and they will see others feedback too including the name and the time. </p>
+                                    </div>
+    
                                     <div className="flex gap-2 text-sm">
-                                            <p className="text-reds">#html</p>
-                                            <p className="text-blues">#css</p>
-                                            <p className="text-php">#php</p>
+                                        <p className="text-reds">#html</p>
+                                        <p className="text-blues">#css</p>
+                                        <p className="text-php">#php</p>
 
-                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -263,19 +258,14 @@ export const Project = () => {
                                 </div>
                                 <div className="flex flex-col justify-between px-3 h-[180px]">
                                     <p className="pt-3 pb-3 text-2xl font-bold">Cargo Capstone</p>
-                                    
-                                        <div className="pb-5">
-                                            <p className="text-sm">Web-based platform that allow users to search, book and manage car rentals, providing a convenient and efficient solution for transportation needs.</p>
-                                        </div>
-                                        
-                                    
+                                    <div className="pb-5">
+                                        <p className="text-sm">Web-based platform that allow users to search, book and manage car rentals, providing a convenient and efficient solution for transportation needs.</p>
+                                    </div>
                                     <div className="flex gap-2 text-sm">
-                                            <p className="text-reds">#react</p>
-                                            <p className="text-greens">#mongodb</p>
-                                            <p className="text-blues">#tailwind</p>
-                                            
-
-                                        </div>
+                                        <p className="text-reds">#react</p>
+                                        <p className="text-greens">#mongodb</p>
+                                        <p className="text-blues">#tailwind</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

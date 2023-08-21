@@ -40,13 +40,9 @@ export const Header = () => {
   // const [darkMode, setDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // const toggleDarkMode = () => {
-  //   setDarkMode((prevDarkMode) => !prevDarkMode);
-  // };
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -84,8 +80,6 @@ export const Header = () => {
           </motion.h2>
         </Link>
         </div>
-        
-        
         <button
           data-collapse-toggle="navbar-dropdown"
           type="button"
