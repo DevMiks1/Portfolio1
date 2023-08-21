@@ -17,17 +17,6 @@ import Netlify from "../assets/about_img/skills-img/others-img/netlify.png"
 import React from "../assets/about_img/skills-img/frontend-img/react.png"
 import Vercel from "../assets/about_img/skills-img/others-img/vercel.png.png"
 
-
-
-
-
-
-
-
-
-
-
-
 export const Project = () => {
     return(
         <div>
@@ -35,13 +24,11 @@ export const Project = () => {
                 <div className="container">
                     <h2 className="  text-secondary text-5xl font-bold  text-center pb-10">My Projects</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 "  >
-                        <motion.div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}
-                        whileHover={{scale: 1.1}}
-                        transition={{type: "spring", stiffness: 200}}
+                        <div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}   
                         >
                             <div className="relative"> 
                                 <div className="relative">
-                                    <img src={Hotel} alt="" className="h-[180px] w-full rounded-lg " />
+                                    <img src={Hotel} alt="Hotel Website" className="h-[180px] w-full rounded-lg " />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                             <a href="https://exquisite-centaur-56859b.netlify.app/" target="_blank" rel="noopener noreferrer"><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                             <a href="https://github.com/DevMiks1/Hotel" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
@@ -64,11 +51,11 @@ export const Project = () => {
                                         </div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                         <div className="border border-white   h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div>
                                 <div className="relative">
-                                    <img src={Kodeledger} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={Kodeledger} alt="Kodeledger" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                         <a href="https://unrivaled-starlight-5cd7c7.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/Kodeledger" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
@@ -94,7 +81,7 @@ export const Project = () => {
                         <div className="border border-white   h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div>
                                 <div className="relative">
-                                    <img src={Newsgrid} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={Newsgrid} alt="Newsgrid Website" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                         <a href="https://radiant-semifreddo-667ec0.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/GridActivity" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
@@ -120,7 +107,7 @@ export const Project = () => {
                         <div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div>
                                 <div className="relative">
-                                    <img src={RandomJokes} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={RandomJokes} alt="Random Jokes" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                         <a href="https://generate-random-jokes-xml.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/GenerateRandomJoke" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
@@ -147,11 +134,10 @@ export const Project = () => {
                         <div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div>
                                 <div className="relative">
-                                    <img src={KeyCodes} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={KeyCodes} alt="Key Codes" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                         <a href="https://event-keys-activities.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/eventKeys" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
-
                                     </div>
                                 </div>
                                 <div className="flex flex-col justify-between px-3 h-[180px]">
@@ -170,7 +156,7 @@ export const Project = () => {
                         <div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div>
                                 <div className="relative">
-                                    <img src={Feedback} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={Feedback} alt="Feedback" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                         <a href="https://addfeedback.000webhostapp.com/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/FeedbackApp" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
@@ -196,7 +182,7 @@ export const Project = () => {
                         <div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div>
                                 <div className="relative">
-                                    <img src={Cargo1} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={Cargo1} alt="Cargo Mini1" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                         <a href="https://cargo-mini-project.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/MiniProject1" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
@@ -223,7 +209,7 @@ export const Project = () => {
                         <div className="border border-white h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div className="h-full">
                                 <div className="relative">
-                                    <img src={NutriChef} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={NutriChef} alt="Nutricious Recipe" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                         <a href="https://cargo-mini-project.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/NutriChefHub-Mini2" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
@@ -249,7 +235,7 @@ export const Project = () => {
                         <div className="border border-white  h-[370px] w-[320px] rounded-lg mx-auto my-10 overflow-hidden" data-aos="fade-up" data-aos-duration="700"  style={{boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)"}}>
                             <div>
                                 <div className="relative">
-                                    <img src={Cargo2} alt="" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
+                                    <img src={Cargo2} alt="Cargo Capstone" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                         <a href="https://capstone-cargo-4t3p97sjn-devmiks1.vercel.app/" target="_blank" rel="noopener noreferrer" ><img src={Vercel} alt="" className="h-[30px] w-[30px] cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/CapstoneCargo" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
