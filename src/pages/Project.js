@@ -28,7 +28,7 @@ export const Project = () => {
                         >
                             <div className="relative"> 
                                 <div className="relative">
-                                    <img src={Hotel} alt="Hotel Website" className="h-[180px] w-full rounded-lg " />
+                                    <img src={Hotel} alt="Hotel Website" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
                                             <a href="https://exquisite-centaur-56859b.netlify.app/" target="_blank" rel="noopener noreferrer"><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                             <a href="https://github.com/DevMiks1/Hotel" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
