@@ -1,4 +1,3 @@
-import {motion} from "framer-motion"
 
 // image
 import Hotel from "../assets/Project_img/Hotel.png"
@@ -211,7 +210,7 @@ export const Project = () => {
                                 <div className="relative">
                                     <img src={NutriChef} alt="Nutricious Recipe" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
-                                        <a href="https://cargo-mini-project.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
+                                        <a href="https://nutrichefmend2.netlify.app/?fbclid=IwAR2anDXJo3qZyK32t5FYOWgC0sio8T7teuOOof1R4UKa8uRvNaqXczIKHqo" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/NutriChefHub-Mini2" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
 
                                     </div>

@@ -29,8 +29,7 @@ module.exports = {
         linelight: "#E9ECEF",
         navbar: "#495057",
         bgcard: "#EDF1F7",
-        
-        
+
       },
     },
   },

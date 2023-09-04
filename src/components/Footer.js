@@ -1,28 +1,12 @@
 
-import { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {motion} from "framer-motion"
 
 
 export const Footer = () => {
-  const [theme, setTheme] = useState("light")
 
   
-  useEffect(() => {
-    if(theme === "dark") {
-      document.documentElement.classList.add("dark")
-    } else {
-      document.documentElement.classList.remove("dark")
-  
-    }
-  } , [theme])  
-  
-  const handleThemeSwitch = () => {
-    
-    setTheme(theme === "dark" ? "light" : "dark")
-    
-  }
-  
+
   return (
 
     <footer className="bg-option dark:bg-black text-white">
