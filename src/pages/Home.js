@@ -1,7 +1,5 @@
 
 import { NavLink } from "react-router-dom"
-import {motion} from "framer-motion"
-
 
 //images for hero section or profile 
 import Profile from "../assets/home_img/profile.png"
@@ -16,19 +14,6 @@ import WebDevelopment from "../assets/home_img/web-development-services.png"
 
 export const Home = () => {
 
-
-
-  const buttonVariants = {
-    hover: {
-      scale: 1.1,
-      transition: {
-      repeat: Infinity,
-      repeatType: "reverse",
-      duration: 0.3,
-      },
-    },
-  };
-  
   return (
     
     <div>  
@@ -48,23 +33,18 @@ export const Home = () => {
                   
                   >
                     <a href="https://www.facebook.com/buboyvargas/" target="_blank" rel="noopener noreferrer">
-                      <motion.button className="border border-secondary px-4 py-2 text-secondary rounded-lg font-bold hover:bg-secondary hover:text-white "
-                      variants={buttonVariants}
-                      whileHover="hover"
+                      <button className="border border-secondary px-4 py-2 text-secondary rounded-lg font-bold hover:bg-secondary hover:text-white "
                       >Contact Me
-                      </motion.button>
+                      </button>
                     </a>
                   </div>
                   
                   <div>
                     <a href="https://drive.google.com/uc?export=download&id=1ZVV-tFGrVszkd25HkAtvQZmMRsVSveJB" download>
 
-                      <motion.button className="border border-secondary bg-secondary text-white px-6 py-2 rounded-lg font-bold hover:bg-transparent hover:text-secondary"
-                      variants={buttonVariants}
-                      whileHover="hover"
-                      
+                      <button className="border border-secondary bg-secondary text-white px-6 py-2 rounded-lg font-bold hover:bg-transparent hover:text-secondary"
                       >Resume
-                      </motion.button>
+                      </button>
                     </a>
 
                   </div>
@@ -74,9 +54,7 @@ export const Home = () => {
               </div>
 
               <div className="z-10">        
-                <motion.img src={Profile} alt="" className="rounded-full h-56 w-56 cursor-pointer"
-                variants={buttonVariants}
-                whileHover="hover"
+                <img src={Profile} alt="" className="rounded-full h-56 w-56 cursor-pointer"
                 />
               </div>
             </div>
@@ -99,14 +77,6 @@ export const Home = () => {
           </div>  
         </div>
       </section> {/* end of journey or blog section  */}
-
-      {/* start of hobbies section  */}
-      <section> 
-        <div className="bg-hobbies text-center py-16 px-4 text-white" >
-          <h2 className="text-4xl font-bold pb-12">HOBBIES</h2>
-          <p className="text-base">When not coding, I have a variety of hobbies and interests that allow me to unwind. I love playing chess for the mind games, basketball to at least exercise my body, and watching movies and series dramas.</p>
-        </div>    
-      </section> {/* end of hobbies section */}
 
       {/* start of services section  */}
       <section className=""> 

@@ -2,8 +2,12 @@ import { NavLink, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import {motion} from "framer-motion" 
 
-import Sun from "../assets/sun.png"
-import Moon from "../assets/moon.png"
+
+import Sun from "../../assets/sun.png"
+import Moon from "../../assets/moon.png"
+
+  // header css
+import "./header.css"
 
 export const Header = () => {
 
@@ -48,6 +52,8 @@ export const Header = () => {
     setIsMenuOpen(false);
     window.scrollTo(0, 0);
   };
+
+
 
   return (
     <nav
@@ -114,55 +120,50 @@ export const Header = () => {
             <li>
               <NavLink
                 to="/"
-                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
-                onClick={closeMenu}
-               
-              >
-                <motion.h2
-               
-                 whileHover={{scale: 1.3, originX: 0}}
-                 transition={{type: "spring", stiffness: 300}}
-                >Home</motion.h2>
+                className="nav-link  py-2 hover:text-secondary md:p-0"
+                onClick={closeMenu}>
+                <h2 >Home</h2>
               </NavLink>
             </li>
 
             <li>
               <NavLink
                 to="/about"
-                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
+                className="nav-link py-2 hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
-                <motion.h2
-                 whileHover={{scale: 1.3, originX: 0}}
-                 transition={{type: "spring", stiffness: 300}}
-                >About
-                </motion.h2>
+                <h2>About
+                </h2>
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/carpaintings"
-                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
+                className="nav-link  py-2 hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
-                <motion.h2 
-                whileHover={{scale: 1.3, originX: 0}}
-                transition={{type: "spring", stiffness: 300}}
-                >Services
-                </motion.h2>
+                <h2>Services
+                </h2>
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/project"
-                className="block py-2 pl-3 pr-4  hover:text-secondary md:p-0"
+                className="nav-link py-2 hover:text-secondary md:p-0"
                 onClick={closeMenu}
               >
-                <motion.h2
-                whileHover={{scale: 1.3, originX: 0}}
-                transition={{type: "spring", stiffness: 300}}
-                >Project
-                </motion.h2>
+                <h2>Project
+                </h2>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contactus"
+                className="nav-link py-2 hover:text-secondary md:p-0"
+                onClick={closeMenu}
+              >
+                <h2>Contact
+                </h2>
               </NavLink>
             </li>
           </ul>

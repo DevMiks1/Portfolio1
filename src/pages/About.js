@@ -3,7 +3,6 @@ import { useState } from "react"
 import {motion} from "framer-motion"
 
 // images
-import KnowMe from "../assets/about_img/know me.jpg"
 
 import SkillList from "./SkillList"
 
@@ -28,23 +27,25 @@ export const About = () => {
     <div>
         <div className="pt-40 pb-20">
             <div className="">
-                {/* Start of know-me section */}
-                <section className=" overflow-hidden">
-                    <div className="grid lg:grid-cols-2 ">
-                        <div>
-                            <img src={KnowMe} alt="" className="h-[400px] w-[400px] mx-auto z-10 mb-10"/>
-                        </div>
-                        <div className="px-5 lg:pt-6 xl:pt-10">
-                            <p className="pb-5">
-                            Hi, I'm Mike Alfred Vargas. I'm inspired to become a full-stack web developer who can learn and adapt to new things. I want to create and develop solutions that can solve problems and help a lot of people since we know that there are a lot of possible solutions to implement that can give us easy access to our lives
-                            </p>
-                            <p className="pb-5">
+                <section>
+                    <div className="container1 grid  ">
+                    <div> 
+                        <h3 className="uppercase text-[18px] md:text-[20px] text-alternative">Introduction and Summary</h3>
+                        <h2 className="text-[50px] py-7 font-bold" >Overview.</h2>
+                        {/* right side with some description about me */}
+                        <div className="text-alternative md:pr-40 lg:pr-60">
+                        <p className="pb-5">
+                            Hi, I'm Mike Alfred Vargas. I'm inspired to become a full-stack web developer who can learn and adapt to new things. I want to create and develop solutions that can solve problems and help a lot of people since we know that there are a lot of possible solutions to implement that can give us easy access to our lives.
+                        </p>
+                        <p className="pb-5">
                             I am passionate to learn more about UI/UX design because it is nice to have a good implementation into your website, such as layout and API building on the back-end side.
-                            </p>
-                            <p>
+                        </p>
+                        <p>
                             Before, I always challenged myself to corporate all the learnings I had when I was a beginner, such as Html, CSS, Bootstrap, Javascript,Tailwind, PHP, Laravel, and MySQL.
-                            </p>
+                        </p>
                         </div>
+                    </div>
+                    
                     </div> 
                 </section> {/* End of know-me section */}
 
@@ -52,38 +53,45 @@ export const About = () => {
                 <section className="py-20 dark:bg-option">
                     <div className="py-10 ">
                         <div className="container1">
-                            <h2 className="text-4xl font-bold pb-2"  data-aos="zoom-in" data-aos-duration="700">Tech Stacks</h2>
-                            <p className="text-[16px] pb-5" data-aos="zoom-in" data-aos-duration="700"> 
-                                Here are my technical stacks from my 3 months learning  in the Kodego bootcamp. I keep learning, studying, research from others and adjusting to new technologies.
-                            </p>
-                            
+                            <h2 className="text-alternative text-[16px] md:text-[20px]">WHAT SKILLS I CURRENTLY HAVE</h2>
+                            <h1 className="text-[50px] font-bold py-7"  data-aos="zoom-in" data-aos-duration="700">Tech Stacks.</h1>
                             <div className="flex gap-2 lg:gap-10 " data-aos="zoom-in" data-aos-duration="700">
-                            <button  className={`px-10 py-[8px] font-bold ${activeCategory === "all" ? 'bg-secondary text-white ' : ''}`} onClick={() => handleCategoryClick("all")}>
+                            <button  className={`px-10 py-[8px] font-bold  ${activeCategory === "all" ? 'bg-secondary text-white ' : 'text-alternative'}`} onClick={() => handleCategoryClick("all")}>
                                 All
                             </button>
-                            <button    className={`px-4 font-bold ${activeCategory === 'frontend' ? 'bg-secondary text-white ' : ''}`} onClick={() => handleCategoryClick("frontend")}>
+                            <button className={`px-4 font-bold  ${activeCategory === 'frontend' ? 'bg-secondary text-white ' : 'dark:text-alternative'}`} onClick={() => handleCategoryClick("frontend")}>
                                 frontend
                             </button>
-                            <button className={`px-5 font-bold ${activeCategory === 'backend' ? 'bg-secondary text-white ' : ''}`} onClick={() => handleCategoryClick("backend")}>
+                            <button className={`px-5 font-bold${activeCategory === 'backend' ? 'bg-secondary text-white ' : 'text-alternative'}`} onClick={() => handleCategoryClick("backend")}>
                                 backend
                             </button>
-                            <button className={`px-8 font-bold ${activeCategory === 'others' ? 'bg-secondary text-white ' : ''}`} onClick={() => handleCategoryClick("others")}>
+                            <button className={`px-8 font-bold${activeCategory === 'others' ? 'bg-secondary text-white ' : 'text-alternative'}`} onClick={() => handleCategoryClick("others")}>
                                 tools
                             </button>
                                 
                             </div>
                             <hr />
-                            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center items-center gap-10 py-20" data-aos="zoom-in" data-aos-duration="700">
+                            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center items-center gap-10 py-20 mx-4 my-4" data-aos="zoom-in" data-aos-duration="700">
                                 {
                                     skills.map((skill) => {
 
-                                    const {id,img} = skill;
+                                        const { id, img } = skill;
+                                        const isMatchedCategory =
+                                            activeCategory === "all" ||
+                                            activeCategory === "frontend" ||
+                                            activeCategory === "backend" ||
+                                            activeCategory === "others";
                                     return (
-                                        <motion.div key={id} className="flex justify-center cursor-pointer"
-                                        whileHover={{scale: 1.3}}
-                                        transition={{type: "spring", stiffness: 500}}
-                                        >
-                                            <img src={img} alt=""  className="h-[40px] w-[40px]"/>
+                                        <motion.div 
+                                        key={id}
+                                        className={`flex justify-center cursor-pointer`}
+                                       
+                                        animate={isMatchedCategory ? { opacity: 1 } : { opacity: 0 }} // Apply opacity animation
+                                        initial={{ opacity: 0 }} // Initial opacity value
+                                        transition={{ duration: 2 }}
+                                        
+                                      >
+                                        <img src={img} alt="" className="h-[100px] object-contain" />
                                           
                                             
                                         </motion.div>

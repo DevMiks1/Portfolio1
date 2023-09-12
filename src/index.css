@@ -6,20 +6,21 @@
     @apply bg-secondary text-center px-1 py-1 rounded-md capitalize font-bold ease-in duration-200 border border-secondary hover:bg-transparent
 }
 
-
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.app-main{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
+html,body{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;  
 }
+/* Add styles to the scrollbar track if needed */
+body::-webkit-scrollbar {
+    display: none; 
+  }
 .container {
     max-width: 1280px;
     margin: auto;
@@ -31,17 +32,10 @@
     padding: 0 20px;
 }
 
-.bg-hobbies{
-    background-image: url("./assets//home_img/chess.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
-#navbar a.active {
+.active {
     color: #ff7d3b;
-  }
+}
 
 /* Services Section */
 
@@ -68,34 +62,7 @@
 .services-card:hover .card-body1, .services-card:hover .card-body2{
     right: 0;
 }
-.skills-effect{
-    position: relative;
-   background: rgba(255, 255, 255, 0.102);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, .2);
-    overflow: hidden;
-}
-.skills-effect::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    height: 100%;
-    width:  100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-    transition: .5s;
-}
-.skills-effect:hover::before{
-    left: 100%;
-}
 
-/* reveal description */
-/* .back-end{
-    overflow: hidden;
-} */
-.back-end:hover .back-end-body , .front-end:hover .front-end-body, .tools:hover .tools-body{
-    right: 0;
-}
 .front-end-body{
     position: absolute;
     top: 0;
@@ -169,4 +136,5 @@
 .__shadow-box{
     box-shadow: 0 0 15px -5px
 }
+
 
