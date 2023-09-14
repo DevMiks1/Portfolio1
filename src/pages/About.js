@@ -30,10 +30,10 @@ export const About = () => {
                 <section>
                     <div className="container1 grid  ">
                     <div> 
-                        <h3 className="uppercase text-[18px] md:text-[20px] text-alternative">Introduction and Summary</h3>
-                        <h2 className="text-[50px] py-7 font-bold" >Overview.</h2>
+                        <h3 className="uppercase text-[18px] md:text-[20px] dark:text-alternative">Introduction and Summary</h3>
+                        <h2 className="text-[50px] py-7 font-bold text-secondary dark:text-white" >Overview.</h2>
                         {/* right side with some description about me */}
-                        <div className="text-alternative md:pr-40 lg:pr-60">
+                        <div className="dark:text-alternative md:pr-40 lg:pr-60">
                         <p className="pb-5">
                             Hi, I'm Mike Alfred Vargas. I'm inspired to become a full-stack web developer who can learn and adapt to new things. I want to create and develop solutions that can solve problems and help a lot of people since we know that there are a lot of possible solutions to implement that can give us easy access to our lives.
                         </p>
@@ -53,21 +53,21 @@ export const About = () => {
                 <section className="py-20 dark:bg-option">
                     <div className="py-10 ">
                         <div className="container1">
-                            <h2 className="text-alternative text-[16px] md:text-[20px]">WHAT SKILLS I CURRENTLY HAVE</h2>
-                            <h1 className="text-[50px] font-bold py-7"  data-aos="zoom-in" data-aos-duration="700">Tech Stacks.</h1>
-                            <div className="flex gap-2 lg:gap-10 " data-aos="zoom-in" data-aos-duration="700">
-                            <button  className={`px-10 py-[8px] font-bold  ${activeCategory === "all" ? 'bg-secondary text-white ' : 'text-alternative'}`} onClick={() => handleCategoryClick("all")}>
-                                All
-                            </button>
-                            <button className={`px-4 font-bold  ${activeCategory === 'frontend' ? 'bg-secondary text-white ' : 'dark:text-alternative'}`} onClick={() => handleCategoryClick("frontend")}>
-                                frontend
-                            </button>
-                            <button className={`px-5 font-bold${activeCategory === 'backend' ? 'bg-secondary text-white ' : 'text-alternative'}`} onClick={() => handleCategoryClick("backend")}>
-                                backend
-                            </button>
-                            <button className={`px-8 font-bold${activeCategory === 'others' ? 'bg-secondary text-white ' : 'text-alternative'}`} onClick={() => handleCategoryClick("others")}>
-                                tools
-                            </button>
+                            <h2 className="dark:text-alternative text-[16px] md:text-[20px]">WHAT SKILLS I CURRENTLY HAVE</h2>
+                            <h1 className="text-[50px] font-bold py-7 text-secondary dark:text-white"  data-aos="zoom-in" data-aos-duration="700">Tech Stacks.</h1>
+                            <div className="flex" data-aos="zoom-in" data-aos-duration="700">
+                                <button  className={`px-10 py-[8px] font-bold hover:text-alternative dark:text-alternative hover:dark:text-white ${activeCategory === "all" ? 'bg-alternative text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("all")}>
+                                    All
+                                </button>
+                                <button className={`px-4 font-bold  dark:text-alternative hover:dark:text-white ${activeCategory === 'frontend' ? 'bg-alternative text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("frontend")}>
+                                    frontend
+                                </button>
+                                <button className={`px-5 font-bold  dark:text-alternative hover:dark:text-white ${activeCategory === 'backend' ? 'bg-alternative text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("backend")}>
+                                    backend
+                                </button>
+                                <button className={`px-8 font-bold  dark:text-alternative hover:dark:text-white ${activeCategory === 'others' ? 'bg-alternative text-white dark:text-white ' : ''}`} onClick={() => handleCategoryClick("others")}>
+                                    tools
+                                </button>
                                 
                             </div>
                             <hr />
@@ -111,8 +111,8 @@ export const About = () => {
 
                 {/* start of testimonial section  */} 
                 <section className="dark:bg-option">
-                    <div className="pt-20">
-                        <div className="text-center text-4xl font-bold pb-20 text-secondary " data-aos="zoom-in">
+                    <div className="pt-16">
+                        <div className="text-center text-4xl font-bold pb-20 text-secondary dark:text-white " data-aos="zoom-in">
                         TESTIMONIALS
                         </div>
                         <div>

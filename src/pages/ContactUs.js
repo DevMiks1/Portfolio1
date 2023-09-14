@@ -1,19 +1,21 @@
+// import state hooks
+import { useState } from 'react';
+// import useForm hooks
 import { useForm } from 'react-hook-form';
 
 export const ContactUs = () => {
   const { register, trigger, formState:{errors} } = useForm();
+  const [errorMessagesVisible, setErrorMessagesVisible] = useState(false);
 
   const onSubmit = async (e) => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
-      setTimeout(() => {
-        // Display the error messages here
-        // You can use a state variable or another mechanism to manage the display of error messages
-        // For example, you can set a state variable to control their visibility
-        // Example: setErrorMessagesVisible(true);
-      }, 2000);
-      console.log(setTimeout);
+      setErrorMessagesVisible(true)
+      setTimeout(() =>{
+        setErrorMessagesVisible(false)
+      }, 2000)
+      
     }
     
   };
@@ -25,27 +27,28 @@ export const ContactUs = () => {
             CONTACT ME TO GET STARTED
         </h1>
         <form action="https://formsubmit.co/d9199cd83bc9f38640ce6ba1b3800c93" method="post" onSubmit={onSubmit}>
-          <div>
-            <label >NAME:</label>
+          <div className='flex flex-col'>
+            <label htmlFor='name' className='py-3'>NAME:</label>
             <input
               type="text"
+              id='name'
 
-              placeholder='NAME'
+              placeholder='Your name goes here!'
               {...register("name",{
                 required: true,
                 maxLength: 100,
               })}
-              className="border rounded-lg p-2 w-full"
+              className="border rounded-lg p-2 w-full focus:outline-none focus:ring-transparent border-black  outline-none text-black dark:border-none"
             />
-            {errors.name && (
+            {errors.name && errorMessagesVisible &&(
             <p className='text-red-500'>
               {errors.name.type === "required" && "This field is required."}
               {errors.name.type === "maxLength" && "Max Length is required."}
             </p>
             )}
           </div>
-          <div className='pt-3'>
-            <label>Email:</label>
+          <div className='flex flex-col'>
+            <label className='py-3'>Email:</label>
             <input
               type="text"
               
@@ -54,28 +57,28 @@ export const ContactUs = () => {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
               })}
-              className="border rounded-lg p-2 w-full"
+              className="border rounded-lg p-2 w-full focus:outline-none focus:ring-transparent border-black outline-none text-black dark:border-black"
             />
-            {errors.email && (
+            {errors.email && errorMessagesVisible &&(
             <p className='text-red-500'>
               {errors.email.type === "required" && "This field is required."}
               {errors.email.type === "pattern" && "Invalid email address."}
             </p>
             )}
           </div>
-          <div className='pt-3'>
-            <label>Message:</label> {/* Corrected 'htmlFor' value */}
+          <div className='flex flex-col'>
+            <label className='py-3'>Message:</label> {/* Corrected 'htmlFor' value */}
             <textarea
-              
+              placeholder='Hit me up with a message'
               cols="30"
               rows="10"
               {...register("message",{
                 required: true,
                 maxLength: 2000,
               })}
-              className="border rounded-lg p-2 w-full"
+              className="border rounded-lg p-2 w-full focus:outline-none focus:ring-transparent border-black outline-none text-black dark:border-black"
             />
-            {errors.message && (
+            {errors.message && errorMessagesVisible &&(
             <p className='text-red-500'>
               {errors.message.type === "required" && "This field is required."}
               {errors.message.type === "maxLength" && "Max Length is 2000 char."}

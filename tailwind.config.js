@@ -29,7 +29,7 @@ module.exports = {
         linelight: "#E9ECEF",
         navbar: "#495057",
         bgcard: "#EDF1F7",
-        alternative: "#9AA9B4,"
+        alternative: "#9AA9B4"
 
       },
     },
