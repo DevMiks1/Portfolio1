@@ -12,7 +12,7 @@ module.exports = {
         primarylight: "#020726",
         primarydark: "#010417",
         secondary: "#ff7d3b",
-        white: "#fff",
+        white: "#F4F4F4",
         light: "#909296",
         violet : "#A427DF",
         facebook : "#1877F2",

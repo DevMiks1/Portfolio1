@@ -56,16 +56,16 @@ export const About = () => {
                             <h2 className="dark:text-alternative text-[16px] md:text-[20px]">WHAT SKILLS I CURRENTLY HAVE</h2>
                             <h1 className="text-[50px] font-bold py-7 text-secondary dark:text-white"  data-aos="zoom-in" data-aos-duration="700">Tech Stacks.</h1>
                             <div className="flex" data-aos="zoom-in" data-aos-duration="700">
-                                <button  className={`px-10 py-[8px] font-bold hover:text-alternative dark:text-alternative hover:dark:text-white ${activeCategory === "all" ? 'bg-alternative text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("all")}>
+                                <button  className={`px-10 py-[8px] font-bold dark:text-alternative hover:dark:text-white ${activeCategory === "all" ? 'bg-secondary text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("all")}>
                                     All
                                 </button>
-                                <button className={`px-4 font-bold  dark:text-alternative hover:dark:text-white ${activeCategory === 'frontend' ? 'bg-alternative text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("frontend")}>
+                                <button className={`px-4 font-bold   hover:dark:text-white ${activeCategory === 'frontend' ? 'bg-secondary text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("frontend")}>
                                     frontend
                                 </button>
-                                <button className={`px-5 font-bold  dark:text-alternative hover:dark:text-white ${activeCategory === 'backend' ? 'bg-alternative text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("backend")}>
+                                <button className={`px-5 font-bold   hover:dark:text-white ${activeCategory === 'backend' ? 'bg-secondary text-white dark:text-white' : ''}`} onClick={() => handleCategoryClick("backend")}>
                                     backend
                                 </button>
-                                <button className={`px-8 font-bold  dark:text-alternative hover:dark:text-white ${activeCategory === 'others' ? 'bg-alternative text-white dark:text-white ' : ''}`} onClick={() => handleCategoryClick("others")}>
+                                <button className={`px-8 font-bold   hover:dark:text-white ${activeCategory === 'others' ? 'bg-secondary text-white dark:text-white ' : ''}`} onClick={() => handleCategoryClick("others")}>
                                     tools
                                 </button>
                                 
