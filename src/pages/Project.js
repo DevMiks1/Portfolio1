@@ -105,8 +105,8 @@ export const Project = () => {
                                 <div className="relative">
                                     <img src={RandomJokes} alt="Random Jokes" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
-                                        <a href="https://generate-random-jokes-xml.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
-                                        <a href="https://github.com/DevMiks1/GenerateRandomJoke" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
+                                        <a href="https://norrischuckjokes.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
+                                        <a href="https://github.com/DevMiks1/norrischuckjokes" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
 
                                     </div>
                                 </div>
@@ -132,7 +132,7 @@ export const Project = () => {
                                 <div className="relative">
                                     <img src={KeyCodes} alt="Key Codes" className="h-[180px] w-full rounded-lg transition-transform duration-1000 transform-gpu hover:scale-110" />
                                     <div className="flex flex-col gap-2 absolute top-6 right-3">
-                                        <a href="https://event-keys-activities.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
+                                        <a href="https://eventkeys.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={Netlify} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                         <a href="https://github.com/DevMiks1/eventKeys" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="" className="h-[30px] w-[30px] bg-white rounded-full cursor-pointer"/></a>
                                     </div>
                                 </div>
