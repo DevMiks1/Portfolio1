@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+
 .btn{
     @apply bg-secondary text-center px-1 py-1 rounded-md capitalize font-bold ease-in duration-200 border border-secondary hover:bg-transparent
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;

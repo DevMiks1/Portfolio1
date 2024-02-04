@@ -1,0 +1,7 @@
+export {Home} from "../partial/Home"
+export {About} from "../partial/About"
+export {Services} from "../partial/Services"
+export {ServicesInfo} from "../partial/ServicesInfo"
+export {Contact} from "../partial/Contact"
+export {Project} from "../partial/Project"
+export {PageNotFound} from "../partial/PageNotFound"
