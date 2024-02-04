@@ -52,7 +52,7 @@ const RightNavBarComponents = ({
         >
           <Link
             _hover={{ textDecor: "none" }}
-            href="https://drive.google.com/uc?export=download&id=1pwwxx5hL6KXZKRVbhuDBMWRM9pg8_8Wv"
+            href="https://drive.google.com/uc?export=download&id=1TqRdC5AoQvVFnoq_xTOSM7wpvqlVVB7Z"
             isExternal
           >
             <Text>Hire Me</Text>

@@ -28,7 +28,7 @@ export const Home = () => {
       {loading ? (
         <LoadingScreenComponents />
       ) : (
-        <Box as="section" fontFamily="poppins">
+        <Box  as="section" fontFamily="poppins">
           <Container maxW="container.xl" mx="auto" h="100%">
             {/* INTRODUCTION  */}
             <Box

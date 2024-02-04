@@ -12,6 +12,8 @@ import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { LoadingProvider } from "./components/context/LoadingContext";
 
+import "./index.css"
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const customTheme = extendTheme({
