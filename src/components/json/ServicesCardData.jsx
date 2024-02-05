@@ -11,7 +11,7 @@ export const ServicesCardData = {
       id: 1,
       title: "Car Painting",
       description:
-        "We specialize in delivering top-quality car painting services that will transform the look of your vehicle. Whether you want to restore the original shine or give your car a fresh, vibrant color, with our skilled and experienced technicians, we have the services to make it happen.",
+        "We specialize in delivering top-quality car painting services that will transform the look of your vehicle. Whether you want to restore the original shine or give your car a fresh, with our skilled and experienced technicians, we have the services to make it happen.",
       button: "Discover",
       image: carpainting,
       pageNumber: 1,

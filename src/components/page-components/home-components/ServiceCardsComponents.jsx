@@ -31,7 +31,7 @@ const ServiceCardsComponents = ({
   return (
     <Box h="100%">
       {/* IMAGE */}
-      <Box h="40%">
+      <Box h="170px">
         <Img src={image} alt={alt} h="100%" w="100%" rounded={5} />
       </Box>
 
@@ -52,6 +52,7 @@ const ServiceCardsComponents = ({
               bg="secondary.500"
               onClick={handleClick}
               _hover={{ bg: "blue.400" }}
+              mt={5}
             >
               <Text color="white">{button}</Text>
             </Button>

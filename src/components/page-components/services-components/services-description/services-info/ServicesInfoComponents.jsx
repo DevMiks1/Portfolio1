@@ -1,27 +1,29 @@
 /** @format */
 
-const ServicesInfoComponents = ({ currentItem }) => {
-  const { id, image, description } = currentItem;
-  return (
-    <div key={id}>
-      <div className="col-span-2 px-7">
-        <div>
-          <img src={image} alt="" className="w-full" />
-        </div>
+import { Box, Img, Text } from "@chakra-ui/react";
 
-        <div>
+const ServicesInfoComponents = ({ currentItem }) => {
+  const { id, image, description, alt } = currentItem;
+  return (
+    <Box key={id}>
+     
+        <Box pb={5}>
+          <Img src={image} alt={alt}  w="100%"/>
+        </Box>
+
+        <Box >
           {description.map((desc, index) => (
-            <p
+            <Text
               key={index}
-              className="text-base pt-10 pb-5 dark:text-color-white"
+              pb={5}
               data-aos="zoom-in"
             >
               {desc.descriptions}
-            </p>
+            </Text>
           ))}
-        </div>
-      </div>
-    </div>
+        </Box>
+    
+    </Box>
   );
 };
 

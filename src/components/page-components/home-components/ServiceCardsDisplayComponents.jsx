@@ -28,7 +28,7 @@ const ServiceCardsDisplayComponents = () => {
             key={id}
             width={{ base: "100%", sm: "70%", md: "40%", lg: "30%" }}
             border="2px solid #3182ce"
-            h="450px"
+            h={{base: "100%", }}
             data-aos="fade-up"
             data-aos-duration="700"
             style={{ boxShadow: "0 0 15px -5px rgba(0, 0, 0, 0.5)" }}
