@@ -7,6 +7,7 @@ import { Box, Flex, Img, Link, Text } from "@chakra-ui/react";
 
 // IMPORT CREATE CONTEXT RELATED / THIS IS FOR LOADING SCREEN
 import { useLoading } from "../../../../context/LoadingContext";
+import { NavLink } from "react-router-dom";
 
 const BlogsSuggestedCategory = ({ img, title, alt, url, date }) => {
   const { setLoadingState } = useLoading();
@@ -18,7 +19,6 @@ const BlogsSuggestedCategory = ({ img, title, alt, url, date }) => {
     }, 2000);
   };
   return (
-    
     <Flex gap={5}>
       <Box w="55%" data-aos="zoom-in" data-aos-duration="700">
         <Img
@@ -31,19 +31,31 @@ const BlogsSuggestedCategory = ({ img, title, alt, url, date }) => {
 
       <Box w="45%" data-aos="zoom-in-up" data-aos-duration="700">
         <Box borderRadius="15px">
-          <Text bg="blue.600" borderRadius={10} textAlign="center" mb={5} fontSize="14px" mr={3}>
-             {date}
+          <Text
+            bg="blue.600"
+            borderRadius={10}
+            textAlign="center"
+            mb={5}
+            fontSize="14px"
+            mr={3}
+          >
+            {date}
           </Text>
         </Box>
-        <Link
-          href={url}
-          isExternal
-          _hover={{ color: "gray.300", transition: "0.3s", textDecor: "none" }}
-        >
-          <Text as="h3" pr={3} onClick={handleClick}>
+        <NavLink to={`/blogs/${url}`}>
+          <Text
+            as="h3"
+            pr={3}
+            onClick={handleClick}
+            _hover={{
+              color: "gray.300",
+              transition: "0.3s",
+              textDecor: "none",
+            }}
+          >
             {title}
           </Text>
-        </Link>
+        </NavLink>
       </Box>
     </Flex>
   );

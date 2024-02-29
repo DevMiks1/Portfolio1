@@ -8,18 +8,23 @@ import BlogsCategory1 from "./BlogsCategory1";
 const BlogsContent1 = ({ currentItem }) => {
   return (
     <Box>
-      <Flex justify="space-between">
+      <Flex>
         <Text pb={5} fontSize="28px" fontWeight="semibold">
           Pursuing Career
         </Text>
-        <Text fontSize="18px">View All</Text>
       </Flex>
-      <Flex w="100%" justify="space-between">
+      <Flex
+        flexDir={{ base: "column", md: "row" }}
+       
+        justify="space-between"
+        gap={{ base: 10, md: 0 }}
+        flexWrap="wrap"
+      >
         {BlogsInfoData.Blogs.map((blog) => {
           const { id, img, alt, profile, name, date, title, url, description } =
             blog;
           return (
-            <Box key={id} w={{ base: "100%", lg: "31%" }} h="100%">
+            <Box key={id} h="100%"  w={{ base: "100%", md: "48%", lg: "31%" }} flexWrap="wrap" pb={{md: 10, lg: 0}}>
               <BlogsCategory1
                 id={id}
                 img={img}

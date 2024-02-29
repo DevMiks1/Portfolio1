@@ -48,7 +48,7 @@ const NavBar = () => {
 
             <NavLink to="/">
               <Heading as="h2" onClick={handleLoading}>
-                MIKEEDEV
+                MIKS<Box color="secondary.500" display="inline">DEV</Box>
               </Heading>
             </NavLink>
 
