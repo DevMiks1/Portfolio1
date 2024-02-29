@@ -6,6 +6,7 @@ import {
   FaInfoCircle,
   FaFolderOpen,
   FaPhone,
+  FaBook,
   FaCog,
 } from "react-icons/fa";
 
@@ -15,7 +16,8 @@ export const NavBarData = {
     { id: 2, name: "About", path: "/about", isDesktop: true },
     { id: 3, name: "Services", path: "/services", isDesktop: true },
     { id: 4, name: "Project", path: "/project", isDesktop: true },
-    { id: 5, name: "Contact", path: "/contact", isDesktop: true },
+    { id: 5, name: "Blogs", path: "/blogs", isDesktop: true },
+    { id: 6, name: "Contact", path: "/contact", isDesktop: true },
   ],
   NavbarMobile: [
     { id: 1, name: "Home", icon: <FaHome />, path: "/", isMobile: true },
@@ -42,6 +44,13 @@ export const NavBarData = {
     },
     {
       id: 5,
+      name: "Blogs",
+      icon: <FaBook />,
+      path: "/blogs",
+      isMobile: true,
+    },
+    {
+      id: 6,
       name: "Contact",
       icon: <FaPhone />,
       path: "/contact",

@@ -34,7 +34,7 @@ const MobileNavBar = ({ isOpen, onClose, handleActive, active }) => {
             <Flex
               flexDir="column"
               gap={10}
-              align="center"
+              align="start"
               justify="center"
               h="100%"
               fontWeight="semibold"

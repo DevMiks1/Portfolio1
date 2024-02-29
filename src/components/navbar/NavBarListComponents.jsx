@@ -44,7 +44,7 @@ const NavBarListComponents = ({
             color: "secondary.500",
           }}
           gap={isMobile ? 5 : 0}
-          justify={isMobile ? "center" : ""}
+          justify={isMobile ? "" : ""}
           align={isMobile ? "center" : ""}
         >
           {isMobile && icon}
