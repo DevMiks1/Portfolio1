@@ -31,9 +31,17 @@ export const ServicesInfo = () => {
   if (!currentItem) {
     // Handle case when currentItem is not found
     return (
-      <Box py={40} px={10}>
-        <Text>Item not found</Text>
-      </Box>
+      <Flex
+        as="section"
+        flexDir="column"
+        justify="center"
+        align="center"
+        minH="100vh"
+      >
+        <Heading as="h2" fontSize="30px" fontWeight="bold">
+        Item Not Found!!
+      </Heading>
+      </Flex>
     );
   }
 

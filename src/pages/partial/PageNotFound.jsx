@@ -1,15 +1,34 @@
+/** @format */
 
-import { NavLink } from 'react-router-dom'
+import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export const PageNotFound = () => {
   return (
-    <div>
-        <div className='py-40'>
-            <div className='flex flex-col justify-center items-center'>
-                <h2 className='text-5xl font-bold'>404 Not Found</h2>
-                <NavLink to="/" className="px-7 mt-20 py-2 bg-button text-white rounded-lg"><button>Home</button></NavLink>
-            </div>
-        </div>
-    </div>
-  )
-}
+    <Flex
+      as="section"
+      flexDir="column"
+      justify="center"
+      align="center"
+      minH="100vh"
+    >
+      <Heading as="h2" fontSize="40px" fontWeight="bold">
+        404 Not Found
+      </Heading>
+      <Link to="/">
+        <Button
+          px={7}
+          mt={10}
+          py={2}
+          bg="secondary.500"
+          _hover={{
+            bg: "blue.400",
+            cursor: "pointer",
+          }}
+        >
+          <Text color="white">Home</Text>
+        </Button>
+      </Link>
+    </Flex>
+  );
+};

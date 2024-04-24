@@ -55,7 +55,7 @@ const RightNavBarComponents = ({
             href="https://drive.google.com/uc?export=download&id=1TqRdC5AoQvVFnoq_xTOSM7wpvqlVVB7Z"
             isExternal
           >
-            <Text>Hire Me</Text>
+            <Text >Hire Me</Text>
           </Link>
         </Box>
       </Flex>
